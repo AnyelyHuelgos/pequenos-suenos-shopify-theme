@@ -1,0 +1,257 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_jVaWmY": {
+      "type": "hero",
+      "name": "Banner principal",
+      "blocks": {
+        "text_YLPk4p": {"type": "text", "settings": {"text": "<h1>Suavidad para sus primeros sueños</h1>", "type_preset": "h1", "width": "fit-content", "alignment": "center"}},
+        "text_sub01": {"type": "text", "settings": {"text": "<p>Ropa, cobijas y detalles para el cuarto del bebé, hechos en Colombia con algodón que cuida su piel.</p>", "type_preset": "paragraph", "width": "fit-content", "max_width": "narrow", "alignment": "center"}},
+        "button_H9gpTf": {"type": "button", "settings": {"label": "Ver la colección", "link": "shopify://collections/ropa-para-sus-primeros-meses", "style_class": "button"}},
+        "button_regalos01": {"type": "button", "settings": {"label": "Regalos para baby shower", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button-secondary"}}
+      },
+      "block_order": ["text_YLPk4p", "text_sub01", "button_H9gpTf", "button_regalos01"],
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/Guarderia_bohemia_banada_por_el_sol.png",
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 20,
+        "section_width": "page-width",
+        "section_height": "large",
+        "toggle_overlay": true,
+        "overlay_color": "#FBF7F299",
+        "overlay_style": "solid",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "beneficios01": {
+      "type": "section",
+      "name": "Beneficios",
+      "blocks": {
+        "b1": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
+          "h": {"type": "text", "settings": {"text": "<h3>Algodón que cuida su piel</h3>", "type_preset": "h5", "width": "100%", "alignment": "center"}},
+          "t": {"type": "text", "settings": {"text": "<p>Pima y orgánico, suave e hipoalergénico.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
+        }, "block_order": ["h", "t"]},
+        "b2": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
+          "h": {"type": "text", "settings": {"text": "<h3>Hecho en Colombia</h3>", "type_preset": "h5", "width": "100%", "alignment": "center"}},
+          "t": {"type": "text", "settings": {"text": "<p>Confeccionado en pequeños lotes por talleres y artesanas locales.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
+        }, "block_order": ["h", "t"]},
+        "b3": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
+          "h": {"type": "text", "settings": {"text": "<h3>Listo para regalar</h3>", "type_preset": "h5", "width": "100%", "alignment": "center"}},
+          "t": {"type": "text", "settings": {"text": "<p>Empaque de regalo y tarjeta escrita a mano.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
+        }, "block_order": ["h", "t"]},
+        "b4": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
+          "h": {"type": "text", "settings": {"text": "<h3>Cambios sin enredos</h3>", "type_preset": "h5", "width": "100%", "alignment": "center"}},
+          "t": {"type": "text", "settings": {"text": "<p>Si la talla no le quedó, la cambiamos dentro de los 30 días.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
+        }, "block_order": ["h", "t"]}
+      },
+      "block_order": ["b1", "b2", "b3", "b4"],
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "flex-start",
+        "gap": 24,
+        "section_width": "page-width",
+        "background_color": "#DCE6DF",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "colecciones01": {
+      "type": "collection-list",
+      "name": "Colecciones",
+      "blocks": {
+        "header": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "flex-start", "gap": 8}, "blocks": {
+          "t": {"type": "text", "settings": {"text": "<h2>Encuentra lo que necesitas</h2>", "type_preset": "h3", "width": "fit-content", "alignment": "left"}}
+        }, "block_order": ["t"]},
+        "static-collection-card": {
+          "type": "_collection-card",
+          "static": true,
+          "settings": {"placement": "below_image", "horizontal_alignment": "flex-start", "vertical_alignment": "center", "border": "none", "border_radius": 12},
+          "blocks": {
+            "collection-card-image": {"type": "_collection-card-image", "static": true, "settings": {"image_ratio": "square"}},
+            "collection-title": {"type": "collection-title", "settings": {"type_preset": "h5", "width": "fit-content", "alignment": "left"}}
+          },
+          "block_order": ["collection-title"]
+        }
+      },
+      "block_order": ["header"],
+      "settings": {
+        "collection_list": ["ropa-para-sus-primeros-meses", "cobijas-y-hora-de-dormir", "su-cuarto-sonado", "regalos-para-baby-shower"],
+        "layout_type": "grid",
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 16,
+        "rows_gap": 16,
+        "section_width": "page-width",
+        "gap": 24,
+        "padding-block-start": 64,
+        "padding-block-end": 32
+      }
+    },
+    "product_list_fa6P9H": {
+      "type": "product-list",
+      "name": "Los más queridos",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content", "static": true,
+          "settings": {"content_direction": "row", "horizontal_alignment": "space-between", "vertical_alignment": "flex-end", "align_baseline": true, "gap": 12, "width": "fill"},
+          "blocks": {
+            "product_list_text_YFtzcL": {"type": "_product-list-text", "settings": {"text": "<h3>Los más queridos</h3><p>Las prendas que más se repiten en las pañaleras de nuestras familias.</p>", "type_preset": "h3", "width": "fit-content", "alignment": "left"}},
+            "product_list_button_MWeP9V": {"type": "_product-list-button", "settings": {"label": "Ver toda la ropa", "style_class": "button-unstyled"}}
+          },
+          "block_order": ["product_list_text_YFtzcL", "product_list_button_MWeP9V"]
+        },
+        "static-product-card": {
+          "type": "_product-card", "static": true,
+          "settings": {"product_card_gap": 4, "border": "none", "border_radius": 12},
+          "blocks": {
+            "product_card_gallery_677WP3": {"type": "_product-card-gallery", "settings": {"image_ratio": "square", "border": "none", "border_radius": 12}},
+            "product_title_YXxMTj": {"type": "product-title", "settings": {"type_preset": "rte", "width": "100%", "alignment": "left", "padding-block-start": 4}},
+            "price_JQzVV4": {"type": "price", "settings": {"type_preset": "h6", "width": "100%", "alignment": "left", "show_sale_price_first": true}}
+          },
+          "block_order": ["product_card_gallery_677WP3", "product_title_YXxMTj", "price_JQzVV4"]
+        }
+      },
+      "settings": {
+        "collection": "ropa-para-sus-primeros-meses",
+        "layout_type": "grid",
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 16,
+        "rows_gap": 24,
+        "section_width": "page-width",
+        "gap": 28,
+        "padding-block-start": 48,
+        "padding-block-end": 64
+      }
+    },
+    "historia01": {
+      "type": "section",
+      "name": "Nuestra historia",
+      "blocks": {
+        "image": {"type": "image", "settings": {"image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png", "image_ratio": "square"}},
+        "group": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "flex-start", "gap": 20, "width": "custom"}, "blocks": {
+          "heading": {"type": "text", "settings": {"text": "<h2>Hecho con calma, como deben ser los primeros días</h2>", "type_preset": "h3"}},
+          "text": {"type": "text", "settings": {"text": "<p>Pequeños Sueños nació de una idea simple: que lo primero que toque a un bebé sea suave, seguro y hecho con cariño. Por eso trabajamos con talleres y artesanas colombianas, elegimos telas que respiran y diseñamos en colores tranquilos que combinan entre sí.</p>", "max_width": "narrow"}},
+          "button": {"type": "button", "settings": {"label": "Conoce nuestra historia", "link": "shopify://pages/sobre-nosotros", "style_class": "button"}}
+        }, "block_order": ["heading", "text", "button"]}
+      },
+      "block_order": ["image", "group"],
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "vertical_alignment": "center",
+        "gap": 48,
+        "section_width": "page-width",
+        "background_color": "#E8DED2",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
+    "hero_regalos01": {
+      "type": "hero",
+      "name": "Banner de regalos",
+      "blocks": {
+        "text_regalos_h": {"type": "text", "settings": {"text": "<h2>¿Vas a un baby shower?</h2>", "type_preset": "h2", "width": "fit-content", "alignment": "center"}},
+        "text_regalos_p": {"type": "text", "settings": {"text": "<p>Regalos que se usan de verdad, listos para entregar con tarjeta escrita a mano.</p>", "type_preset": "paragraph", "width": "fit-content", "max_width": "narrow", "alignment": "center"}},
+        "button_regalos02": {"type": "button", "settings": {"label": "Ver regalos", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button"}}
+      },
+      "block_order": ["text_regalos_h", "text_regalos_p", "button_regalos02"],
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/Regalos_tiernos_en_tonos_naturales.png",
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "medium",
+        "toggle_overlay": true,
+        "overlay_color": "#F2C9B8B3",
+        "overlay_style": "solid",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
+    "product_list_cobijas01": {
+      "type": "product-list",
+      "name": "Para su hora de dormir",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content", "static": true,
+          "settings": {"content_direction": "row", "horizontal_alignment": "space-between", "vertical_alignment": "flex-end", "align_baseline": true, "gap": 12, "width": "fill"},
+          "blocks": {
+            "product_list_text_cob01": {"type": "_product-list-text", "settings": {"text": "<h3>Para su hora de dormir</h3>", "type_preset": "h3", "width": "fit-content", "alignment": "left"}},
+            "product_list_button_cob01": {"type": "_product-list-button", "settings": {"label": "Ver cobijas", "style_class": "button-unstyled"}}
+          },
+          "block_order": ["product_list_text_cob01", "product_list_button_cob01"]
+        },
+        "static-product-card": {
+          "type": "_product-card", "static": true,
+          "settings": {"product_card_gap": 4, "border": "none", "border_radius": 12},
+          "blocks": {
+            "product_card_gallery_cob01": {"type": "_product-card-gallery", "settings": {"image_ratio": "square", "border": "none", "border_radius": 12}},
+            "product_title_cob01": {"type": "product-title", "settings": {"type_preset": "rte", "width": "100%", "alignment": "left", "padding-block-start": 4}},
+            "price_cob01": {"type": "price", "settings": {"type_preset": "h6", "width": "100%", "alignment": "left", "show_sale_price_first": true}}
+          },
+          "block_order": ["product_card_gallery_cob01", "product_title_cob01", "price_cob01"]
+        }
+      },
+      "settings": {
+        "collection": "cobijas-y-hora-de-dormir",
+        "layout_type": "grid",
+        "max_products": 3,
+        "columns": 3,
+        "mobile_columns": "2",
+        "columns_gap": 16,
+        "rows_gap": 24,
+        "section_width": "page-width",
+        "gap": 28,
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
+    "promesa01": {
+      "type": "section",
+      "name": "Nuestra promesa",
+      "blocks": {
+        "heading": {"type": "text", "settings": {"text": "<h2>Cuidamos lo que más quieres</h2>", "type_preset": "h2", "width": "100%", "max_width": "narrow", "alignment": "center"}},
+        "text": {"type": "text", "settings": {"text": "<p>Cada prenda pasa por nuestras manos antes de llegar a las tuyas. Si algo no te convence, escríbenos: te respondemos como una amiga, no como un robot.</p>", "type_preset": "paragraph", "width": "100%", "max_width": "narrow", "alignment": "center"}},
+        "button": {"type": "button", "settings": {"label": "Escríbenos", "link": "shopify://pages/contacto", "style_class": "button-secondary"}}
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "content_direction": "column",
+        "horizontal_alignment_flex_direction_column": "center",
+        "gap": 20,
+        "section_width": "page-width",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    }
+  },
+  "order": [
+    "hero_jVaWmY",
+    "beneficios01",
+    "colecciones01",
+    "product_list_fa6P9H",
+    "historia01",
+    "hero_regalos01",
+    "product_list_cobijas01",
+    "promesa01"
+  ]
+}

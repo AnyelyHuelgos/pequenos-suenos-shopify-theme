@@ -150,12 +150,13 @@
       "type": "section",
       "name": "Nuestra historia",
       "blocks": {
-        "image": {"type": "image", "settings": {"image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png", "image_ratio": "portrait", "width": "custom", "custom_width": 38, "width_mobile": "fill", "border_radius": 16}},
-        "group": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 16, "width": "fill"}, "blocks": {
-          "heading": {"type": "text", "settings": {"text": "<h2>Hecho con calma, como deben ser los primeros días</h2>", "type_preset": "h2", "width": "100%", "max_width": "narrow"}},
-          "text": {"type": "text", "settings": {"text": "<p>Pequeños Sueños nació de una idea simple: que lo primero que toque a un bebé sea suave, seguro y hecho con cariño.</p><p>Por eso trabajamos con talleres y artesanas colombianas, elegimos telas que respiran y diseñamos en colores tranquilos que combinan entre sí.</p>", "type_preset": "paragraph", "width": "100%", "max_width": "narrow"}},
+        "image": {"type": "image", "settings": {"image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png", "image_ratio": "portrait", "width": "custom", "custom_width": 30, "width_mobile": "fill", "border_radius": 16}},
+        "group": {"type": "group", "settings": {"content_direction": "column", "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 14, "width": "custom", "custom_width": 48, "width_mobile": "fill", "custom_width_mobile": 100}, "blocks": {
+          "heading": {"type": "text", "settings": {"text": "<h2>Hecho con calma, como deben ser los primeros días</h2>", "type_preset": "h3", "width": "100%"}},
+          "text": {"type": "text", "settings": {"text": "<p>Pequeños Sueños nació de una idea simple: que lo primero que toque a un bebé sea suave, seguro y hecho con cariño.</p><p>Por eso trabajamos con talleres y artesanas colombianas, elegimos telas que respiran y diseñamos en colores tranquilos que combinan entre sí.</p><p>Cada pieza se confecciona en pequeños lotes, se revisa a mano y se empaca con el mismo cuidado con el que tú la vas a usar. Así apoyamos el trabajo de mujeres artesanas y te entregamos algo que dura más allá de la primera talla.</p>", "type_preset": "rte", "width": "100%"}},
+          "firma": {"type": "text", "settings": {"text": "<p><em>Con cariño, el equipo de Pequeños Sueños</em></p>", "type_preset": "rte", "width": "100%"}},
           "button": {"type": "button", "settings": {"label": "Conoce nuestra historia", "link": "shopify://pages/sobre-nosotros", "style_class": "button"}}
-        }, "block_order": ["heading", "text", "button"]}
+        }, "block_order": ["heading", "text", "firma", "button"]}
       },
       "block_order": ["image", "group"],
       "settings": {
@@ -163,7 +164,7 @@
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
         "vertical_alignment": "center",
-        "gap": 56,
+        "gap": 48,
         "section_width": "page-width",
         "background_color": "#E8DED2",
         "padding-block-start": 56,

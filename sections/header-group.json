@@ -110,7 +110,9 @@
         "divider_size": "page-width",
         "border_width": 0,
         "background_color_top": "#FBF7F2",
-        "enable_transparent_header_home": false,
+        "enable_transparent_header_home": true,
+        "home_inverse_logo": false,
+        "text_color_transparent_home": "#3E4A4F",
         "enable_transparent_header_product": false,
         "enable_transparent_header_collection": false
       }

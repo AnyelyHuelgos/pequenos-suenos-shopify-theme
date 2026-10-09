@@ -13,57 +13,33 @@
       "type": "hero",
       "name": "Banner principal",
       "blocks": {
-        "tarjeta_hero": {
+        "text_YLPk4p": {"type": "text", "settings": {"text": "<h1>Suavidad para sus primeros sueños</h1>", "type_preset": "h1", "width": "fit-content", "max_width": "narrow", "alignment": "center"}},
+        "text_sub01": {"type": "text", "settings": {"text": "<p>Ropa, cobijas y detalles para el cuarto del bebé, hechos en Colombia con algodón que cuida su piel.</p>", "type_preset": "paragraph", "width": "fit-content", "max_width": "narrow", "alignment": "center"}},
+        "botones_hero": {
           "type": "group",
-          "name": "Tarjeta del banner",
-          "settings": {
-            "content_direction": "column",
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 14,
-            "width": "custom",
-            "custom_width": 55,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "background_media": "none",
-            "background_color": "#FBF7F2EB",
-            "border": "none",
-            "border_radius": 24,
-            "padding-block-start": 40,
-            "padding-block-end": 40,
-            "padding-inline-start": 40,
-            "padding-inline-end": 40
-          },
+          "settings": {"content_direction": "row", "vertical_on_mobile": true, "horizontal_alignment": "center", "vertical_alignment": "center", "gap": 10, "width": "fill", "padding-block-start": 8},
           "blocks": {
-            "text_YLPk4p": {"type": "text", "settings": {"text": "<h1>Suavidad para sus primeros sueños</h1>", "type_preset": "h1", "width": "100%", "alignment": "center"}},
-            "text_sub01": {"type": "text", "settings": {"text": "<p>Ropa, cobijas y detalles para el cuarto del bebé, hechos en Colombia con algodón que cuida su piel.</p>", "type_preset": "paragraph", "width": "100%", "max_width": "narrow", "alignment": "center"}},
-            "botones_hero": {
-              "type": "group",
-              "settings": {"content_direction": "row", "vertical_on_mobile": true, "horizontal_alignment": "center", "vertical_alignment": "center", "gap": 10, "width": "fill", "padding-block-start": 8},
-              "blocks": {
-                "button_H9gpTf": {"type": "button", "settings": {"label": "Ver la colección", "link": "shopify://collections/ropa-para-sus-primeros-meses", "style_class": "button"}},
-                "button_regalos01": {"type": "button", "settings": {"label": "Regalos para baby shower", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button-secondary"}}
-              },
-              "block_order": ["button_H9gpTf", "button_regalos01"]
-            }
+            "button_H9gpTf": {"type": "button", "settings": {"label": "Ver la colección", "link": "shopify://collections/ropa-para-sus-primeros-meses", "style_class": "button"}},
+            "button_regalos01": {"type": "button", "settings": {"label": "Regalos para baby shower", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button-secondary"}}
           },
-          "block_order": ["text_YLPk4p", "text_sub01", "botones_hero"]
+          "block_order": ["button_H9gpTf", "button_regalos01"]
         }
       },
-      "block_order": ["tarjeta_hero"],
+      "block_order": ["text_YLPk4p", "text_sub01", "botones_hero"],
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/Guarderia_bohemia_banada_por_el_sol.png",
         "content_direction": "column",
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
+        "gap": 14,
         "section_width": "page-width",
-        "section_height": "medium",
-        "toggle_overlay": false,
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "section_height": "large",
+        "toggle_overlay": true,
+        "overlay_color": "#FBF7F266",
+        "overlay_style": "solid",
+        "padding-block-start": 100,
+        "padding-block-end": 64
       }
     },
     "beneficios01": {

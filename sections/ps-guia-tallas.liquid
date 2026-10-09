@@ -4,6 +4,21 @@
   Cada fila de la tabla es un bloque editable desde el editor de temas.
 {%- endcomment -%}
 
+
+{%- liquid
+  # Mostrar la guía solo en productos que tienen la opción "Talla".
+  # En el editor de temas siempre se muestra, para poder configurarla.
+  assign ps_mostrar_guia = true
+  if template.name == 'product' and request.design_mode == false
+    unless product.options contains 'Talla'
+      assign ps_mostrar_guia = false
+    endunless
+  endif
+-%}
+
+{%- if ps_mostrar_guia -%}
+
+
 <ps-size-guide
   class="ps-size-guide"
   style="
@@ -72,6 +87,8 @@
     </div>
   </div>
 </ps-size-guide>
+
+{%- endif -%}shopify theme push --theme 167521386751 --only sections/ps-guia-tallas.liquid
 
 {% stylesheet %}
   .ps-size-guide {

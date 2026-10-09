@@ -305,6 +305,66 @@
         "padding-block-end": 0
       }
     },
+    "ps_guia_tallas_CbbDEV": {
+      "type": "ps-guia-tallas",
+      "blocks": {
+        "talla_86jeK3": {
+          "type": "talla",
+          "settings": {
+            "talla": "0-3M",
+            "edad": "0 a 3 meses",
+            "peso_min": 3,
+            "peso_max": 6,
+            "altura": "50 a 62 cm"
+          }
+        },
+        "talla_fdPbFW": {
+          "type": "talla",
+          "settings": {
+            "talla": "3-6M",
+            "edad": "3 a 6 meses",
+            "peso_min": 6,
+            "peso_max": 8,
+            "altura": "62 a 68 cm"
+          }
+        },
+        "talla_GTRzbJ": {
+          "type": "talla",
+          "settings": {
+            "talla": "6-12M",
+            "edad": "6 a 12 meses",
+            "peso_min": 8,
+            "peso_max": 10,
+            "altura": "68 a 76 cm"
+          }
+        },
+        "talla_GgxDNc": {
+          "type": "talla",
+          "settings": {
+            "talla": "12-18M",
+            "edad": "12 a 18 meses",
+            "peso_min": 10,
+            "peso_max": 12,
+            "altura": "76 a 83 cm"
+          }
+        }
+      },
+      "block_order": [
+        "talla_86jeK3",
+        "talla_fdPbFW",
+        "talla_GTRzbJ",
+        "talla_GgxDNc"
+      ],
+      "name": "Guía de tallas",
+      "settings": {
+        "heading": "Guía de tallas",
+        "intro": "<p>Si tu bebé está entre dos tallas, elige la más grande: crecen rapidísimo.</p>",
+        "show_calculator": true,
+        "background_color": "#DCE6DF",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
@@ -312,7 +372,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<h3>You may also like </h3>",
+            "text": "<p><br/>También te puede gustar<br/><br/></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -446,71 +506,11 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
-    },
-    "ps_guia_tallas_CbbDEV": {
-      "type": "ps-guia-tallas",
-      "blocks": {
-        "talla_86jeK3": {
-          "type": "talla",
-          "settings": {
-            "talla": "0-3M",
-            "edad": "0 a 3 meses",
-            "peso_min": 3,
-            "peso_max": 6,
-            "altura": "50 a 62 cm"
-          }
-        },
-        "talla_fdPbFW": {
-          "type": "talla",
-          "settings": {
-            "talla": "3-6M",
-            "edad": "3 a 6 meses",
-            "peso_min": 6,
-            "peso_max": 8,
-            "altura": "62 a 68 cm"
-          }
-        },
-        "talla_GTRzbJ": {
-          "type": "talla",
-          "settings": {
-            "talla": "6-12M",
-            "edad": "6 a 12 meses",
-            "peso_min": 8,
-            "peso_max": 10,
-            "altura": "68 a 76 cm"
-          }
-        },
-        "talla_GgxDNc": {
-          "type": "talla",
-          "settings": {
-            "talla": "12-18M",
-            "edad": "12 a 18 meses",
-            "peso_min": 10,
-            "peso_max": 12,
-            "altura": "76 a 83 cm"
-          }
-        }
-      },
-      "block_order": [
-        "talla_86jeK3",
-        "talla_fdPbFW",
-        "talla_GTRzbJ",
-        "talla_GgxDNc"
-      ],
-      "name": "Guía de tallas",
-      "settings": {
-        "heading": "Guía de tallas",
-        "intro": "<p>Si tu bebé está entre dos tallas, elige la más grande: crecen rapidísimo.</p>",
-        "show_calculator": true,
-        "background_color": "#DCE6DF",
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
     }
   },
   "order": [
     "main",
-    "product_recommendations_qggXJq",
-    "ps_guia_tallas_CbbDEV"
+    "ps_guia_tallas_CbbDEV",
+    "product_recommendations_qggXJq"
   ]
 }

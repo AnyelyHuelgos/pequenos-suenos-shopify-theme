@@ -13,46 +13,77 @@
       "type": "hero",
       "name": "Banner principal",
       "blocks": {
-        "text_YLPk4p": {"type": "text", "settings": {"text": "<h1>Suavidad para sus primeros sueños</h1>", "type_preset": "h1", "width": "fit-content", "alignment": "center"}},
-        "text_sub01": {"type": "text", "settings": {"text": "<p>Ropa, cobijas y detalles para el cuarto del bebé, hechos en Colombia con algodón que cuida su piel.</p>", "type_preset": "paragraph", "width": "fit-content", "max_width": "narrow", "alignment": "center"}},
-        "button_H9gpTf": {"type": "button", "settings": {"label": "Ver la colección", "link": "shopify://collections/ropa-para-sus-primeros-meses", "style_class": "button"}},
-        "button_regalos01": {"type": "button", "settings": {"label": "Regalos para baby shower", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button-secondary"}}
+        "tarjeta_hero": {
+          "type": "group",
+          "name": "Tarjeta del banner",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 14,
+            "width": "custom",
+            "custom_width": 55,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "background_media": "none",
+            "background_color": "#FBF7F2EB",
+            "border": "none",
+            "border_radius": 24,
+            "padding-block-start": 40,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {
+            "text_YLPk4p": {"type": "text", "settings": {"text": "<h1>Suavidad para sus primeros sueños</h1>", "type_preset": "h1", "width": "100%", "alignment": "center"}},
+            "text_sub01": {"type": "text", "settings": {"text": "<p>Ropa, cobijas y detalles para el cuarto del bebé, hechos en Colombia con algodón que cuida su piel.</p>", "type_preset": "paragraph", "width": "100%", "max_width": "narrow", "alignment": "center"}},
+            "botones_hero": {
+              "type": "group",
+              "settings": {"content_direction": "row", "vertical_on_mobile": true, "horizontal_alignment": "center", "vertical_alignment": "center", "gap": 10, "width": "fill", "padding-block-start": 8},
+              "blocks": {
+                "button_H9gpTf": {"type": "button", "settings": {"label": "Ver la colección", "link": "shopify://collections/ropa-para-sus-primeros-meses", "style_class": "button"}},
+                "button_regalos01": {"type": "button", "settings": {"label": "Regalos para baby shower", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button-secondary"}}
+              },
+              "block_order": ["button_H9gpTf", "button_regalos01"]
+            }
+          },
+          "block_order": ["text_YLPk4p", "text_sub01", "botones_hero"]
+        }
       },
-      "block_order": ["text_YLPk4p", "text_sub01", "button_H9gpTf", "button_regalos01"],
+      "block_order": ["tarjeta_hero"],
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/Guarderia_bohemia_banada_por_el_sol.png",
         "content_direction": "column",
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 20,
+        "gap": 0,
         "section_width": "page-width",
-        "section_height": "large",
-        "toggle_overlay": true,
-        "overlay_color": "#FBF7F299",
-        "overlay_style": "solid",
-        "padding-block-start": 80,
-        "padding-block-end": 80
+        "section_height": "medium",
+        "toggle_overlay": false,
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "beneficios01": {
       "type": "section",
       "name": "Beneficios",
       "blocks": {
-        "b1": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
-          "h": {"type": "text", "settings": {"text": "<h3>Algodón que cuida su piel</h3>", "type_preset": "h5", "width": "100%", "alignment": "center"}},
+        "b1": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 4}, "blocks": {
+          "h": {"type": "text", "settings": {"text": "<h3>Algodón que cuida su piel</h3>", "type_preset": "h6", "width": "100%", "alignment": "center"}},
           "t": {"type": "text", "settings": {"text": "<p>Pima y orgánico, suave e hipoalergénico.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
         }, "block_order": ["h", "t"]},
-        "b2": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
-          "h": {"type": "text", "settings": {"text": "<h3>Hecho en Colombia</h3>", "type_preset": "h5", "width": "100%", "alignment": "center"}},
+        "b2": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 4}, "blocks": {
+          "h": {"type": "text", "settings": {"text": "<h3>Hecho en Colombia</h3>", "type_preset": "h6", "width": "100%", "alignment": "center"}},
           "t": {"type": "text", "settings": {"text": "<p>Confeccionado en pequeños lotes por talleres y artesanas locales.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
         }, "block_order": ["h", "t"]},
-        "b3": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
-          "h": {"type": "text", "settings": {"text": "<h3>Listo para regalar</h3>", "type_preset": "h5", "width": "100%", "alignment": "center"}},
+        "b3": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 4}, "blocks": {
+          "h": {"type": "text", "settings": {"text": "<h3>Listo para regalar</h3>", "type_preset": "h6", "width": "100%", "alignment": "center"}},
           "t": {"type": "text", "settings": {"text": "<p>Empaque de regalo y tarjeta escrita a mano.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
         }, "block_order": ["h", "t"]},
-        "b4": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
-          "h": {"type": "text", "settings": {"text": "<h3>Cambios sin enredos</h3>", "type_preset": "h5", "width": "100%", "alignment": "center"}},
+        "b4": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 4}, "blocks": {
+          "h": {"type": "text", "settings": {"text": "<h3>Cambios sin enredos</h3>", "type_preset": "h6", "width": "100%", "alignment": "center"}},
           "t": {"type": "text", "settings": {"text": "<p>Si la talla no le quedó, la cambiamos dentro de los 30 días.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
         }, "block_order": ["h", "t"]}
       },
@@ -62,27 +93,27 @@
         "vertical_on_mobile": true,
         "horizontal_alignment": "space-between",
         "vertical_alignment": "flex-start",
-        "gap": 24,
+        "gap": 20,
         "section_width": "page-width",
         "background_color": "#DCE6DF",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 28,
+        "padding-block-end": 28
       }
     },
     "colecciones01": {
       "type": "collection-list",
       "name": "Colecciones",
       "blocks": {
-        "header": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "flex-start", "gap": 8}, "blocks": {
-          "t": {"type": "text", "settings": {"text": "<h2>Encuentra lo que necesitas</h2>", "type_preset": "h3", "width": "fit-content", "alignment": "left"}}
+        "header": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
+          "t": {"type": "text", "settings": {"text": "<h2>Encuentra lo que necesitas</h2>", "type_preset": "h3", "width": "fit-content", "alignment": "center"}}
         }, "block_order": ["t"]},
         "static-collection-card": {
           "type": "_collection-card",
           "static": true,
-          "settings": {"placement": "below_image", "horizontal_alignment": "flex-start", "vertical_alignment": "center", "border": "none", "border_radius": 12},
+          "settings": {"placement": "below_image", "horizontal_alignment": "center", "vertical_alignment": "center", "border": "none", "border_radius": 16},
           "blocks": {
             "collection-card-image": {"type": "_collection-card-image", "static": true, "settings": {"image_ratio": "square"}},
-            "collection-title": {"type": "collection-title", "settings": {"type_preset": "h5", "width": "fit-content", "alignment": "left"}}
+            "collection-title": {"type": "collection-title", "settings": {"type_preset": "h6", "width": "fit-content", "alignment": "center"}}
           },
           "block_order": ["collection-title"]
         }
@@ -93,12 +124,12 @@
         "layout_type": "grid",
         "columns": 4,
         "mobile_columns": "2",
-        "columns_gap": 16,
-        "rows_gap": 16,
+        "columns_gap": 14,
+        "rows_gap": 14,
         "section_width": "page-width",
-        "gap": 24,
-        "padding-block-start": 64,
-        "padding-block-end": 32
+        "gap": 20,
+        "padding-block-start": 48,
+        "padding-block-end": 24
       }
     },
     "product_list_fa6P9H": {
@@ -116,9 +147,9 @@
         },
         "static-product-card": {
           "type": "_product-card", "static": true,
-          "settings": {"product_card_gap": 4, "border": "none", "border_radius": 12},
+          "settings": {"product_card_gap": 4, "border": "none", "border_radius": 16},
           "blocks": {
-            "product_card_gallery_677WP3": {"type": "_product-card-gallery", "settings": {"image_ratio": "square", "border": "none", "border_radius": 12}},
+            "product_card_gallery_677WP3": {"type": "_product-card-gallery", "settings": {"image_ratio": "square", "border": "none", "border_radius": 16}},
             "product_title_YXxMTj": {"type": "product-title", "settings": {"type_preset": "rte", "width": "100%", "alignment": "left", "padding-block-start": 4}},
             "price_JQzVV4": {"type": "price", "settings": {"type_preset": "h6", "width": "100%", "alignment": "left", "show_sale_price_first": true}}
           },
@@ -131,20 +162,20 @@
         "max_products": 4,
         "columns": 4,
         "mobile_columns": "2",
-        "columns_gap": 16,
-        "rows_gap": 24,
+        "columns_gap": 14,
+        "rows_gap": 20,
         "section_width": "page-width",
-        "gap": 28,
-        "padding-block-start": 48,
-        "padding-block-end": 64
+        "gap": 20,
+        "padding-block-start": 40,
+        "padding-block-end": 48
       }
     },
     "historia01": {
       "type": "section",
       "name": "Nuestra historia",
       "blocks": {
-        "image": {"type": "image", "settings": {"image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png", "image_ratio": "square"}},
-        "group": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "flex-start", "gap": 20, "width": "custom"}, "blocks": {
+        "image": {"type": "image", "settings": {"image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png", "image_ratio": "square", "border_radius": 16}},
+        "group": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "flex-start", "gap": 16, "width": "custom"}, "blocks": {
           "heading": {"type": "text", "settings": {"text": "<h2>Hecho con calma, como deben ser los primeros días</h2>", "type_preset": "h3"}},
           "text": {"type": "text", "settings": {"text": "<p>Pequeños Sueños nació de una idea simple: que lo primero que toque a un bebé sea suave, seguro y hecho con cariño. Por eso trabajamos con talleres y artesanas colombianas, elegimos telas que respiran y diseñamos en colores tranquilos que combinan entre sí.</p>", "max_width": "narrow"}},
           "button": {"type": "button", "settings": {"label": "Conoce nuestra historia", "link": "shopify://pages/sobre-nosotros", "style_class": "button"}}
@@ -155,36 +186,60 @@
         "content_direction": "row",
         "vertical_on_mobile": true,
         "vertical_alignment": "center",
-        "gap": 48,
+        "gap": 40,
         "section_width": "page-width",
         "background_color": "#E8DED2",
-        "padding-block-start": 64,
-        "padding-block-end": 64
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "hero_regalos01": {
       "type": "hero",
       "name": "Banner de regalos",
       "blocks": {
-        "text_regalos_h": {"type": "text", "settings": {"text": "<h2>¿Vas a un baby shower?</h2>", "type_preset": "h2", "width": "fit-content", "alignment": "center"}},
-        "text_regalos_p": {"type": "text", "settings": {"text": "<p>Regalos que se usan de verdad, listos para entregar con tarjeta escrita a mano.</p>", "type_preset": "paragraph", "width": "fit-content", "max_width": "narrow", "alignment": "center"}},
-        "button_regalos02": {"type": "button", "settings": {"label": "Ver regalos", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button"}}
+        "tarjeta_regalos": {
+          "type": "group",
+          "name": "Tarjeta de regalos",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 45,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "background_media": "none",
+            "background_color": "#F2C9B8EB",
+            "border": "none",
+            "border_radius": 24,
+            "padding-block-start": 32,
+            "padding-block-end": 32,
+            "padding-inline-start": 32,
+            "padding-inline-end": 32
+          },
+          "blocks": {
+            "text_regalos_h": {"type": "text", "settings": {"text": "<h2>¿Vas a un baby shower?</h2>", "type_preset": "h3", "width": "100%", "alignment": "center"}},
+            "text_regalos_p": {"type": "text", "settings": {"text": "<p>Regalos que se usan de verdad, listos para entregar con tarjeta escrita a mano.</p>", "type_preset": "paragraph", "width": "100%", "alignment": "center"}},
+            "button_regalos02": {"type": "button", "settings": {"label": "Ver regalos", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button"}}
+          },
+          "block_order": ["text_regalos_h", "text_regalos_p", "button_regalos02"]
+        }
       },
-      "block_order": ["text_regalos_h", "text_regalos_p", "button_regalos02"],
+      "block_order": ["tarjeta_regalos"],
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/Regalos_tiernos_en_tonos_naturales.png",
         "content_direction": "column",
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 0,
         "section_width": "page-width",
-        "section_height": "medium",
-        "toggle_overlay": true,
-        "overlay_color": "#F2C9B8B3",
-        "overlay_style": "solid",
-        "padding-block-start": 64,
-        "padding-block-end": 64
+        "section_height": "small",
+        "toggle_overlay": false,
+        "padding-block-start": 40,
+        "padding-block-end": 40
       }
     },
     "product_list_cobijas01": {
@@ -202,9 +257,9 @@
         },
         "static-product-card": {
           "type": "_product-card", "static": true,
-          "settings": {"product_card_gap": 4, "border": "none", "border_radius": 12},
+          "settings": {"product_card_gap": 4, "border": "none", "border_radius": 16},
           "blocks": {
-            "product_card_gallery_cob01": {"type": "_product-card-gallery", "settings": {"image_ratio": "square", "border": "none", "border_radius": 12}},
+            "product_card_gallery_cob01": {"type": "_product-card-gallery", "settings": {"image_ratio": "square", "border": "none", "border_radius": 16}},
             "product_title_cob01": {"type": "product-title", "settings": {"type_preset": "rte", "width": "100%", "alignment": "left", "padding-block-start": 4}},
             "price_cob01": {"type": "price", "settings": {"type_preset": "h6", "width": "100%", "alignment": "left", "show_sale_price_first": true}}
           },
@@ -217,19 +272,19 @@
         "max_products": 3,
         "columns": 3,
         "mobile_columns": "2",
-        "columns_gap": 16,
-        "rows_gap": 24,
+        "columns_gap": 14,
+        "rows_gap": 20,
         "section_width": "page-width",
-        "gap": 28,
-        "padding-block-start": 64,
-        "padding-block-end": 64
+        "gap": 20,
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "promesa01": {
       "type": "section",
       "name": "Nuestra promesa",
       "blocks": {
-        "heading": {"type": "text", "settings": {"text": "<h2>Cuidamos lo que más quieres</h2>", "type_preset": "h2", "width": "100%", "max_width": "narrow", "alignment": "center"}},
+        "heading": {"type": "text", "settings": {"text": "<h2>Cuidamos lo que más quieres</h2>", "type_preset": "h3", "width": "100%", "max_width": "narrow", "alignment": "center"}},
         "text": {"type": "text", "settings": {"text": "<p>Cada prenda pasa por nuestras manos antes de llegar a las tuyas. Si algo no te convence, escríbenos: te respondemos como una amiga, no como un robot.</p>", "type_preset": "paragraph", "width": "100%", "max_width": "narrow", "alignment": "center"}},
         "button": {"type": "button", "settings": {"label": "Escríbenos", "link": "shopify://pages/contacto", "style_class": "button-secondary"}}
       },
@@ -237,10 +292,10 @@
       "settings": {
         "content_direction": "column",
         "horizontal_alignment_flex_direction_column": "center",
-        "gap": 20,
+        "gap": 16,
         "section_width": "page-width",
-        "padding-block-start": 72,
-        "padding-block-end": 72
+        "padding-block-start": 56,
+        "padding-block-end": 56
       }
     }
   },

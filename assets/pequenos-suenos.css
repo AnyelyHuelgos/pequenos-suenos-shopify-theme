@@ -49,3 +49,67 @@ h1, h2, h3, .h1, .h2, .h3 {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* 6. Barra de navegación flotante tipo píldora */
+.header-section {
+  padding: 12px var(--page-margin, 24px) 0;
+}
+
+#header-component {
+  max-width: 1080px;
+  margin-inline: auto;
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgb(62 74 79 / 10%);
+}
+
+#header-component .header__underlay-closed {
+  border-radius: 999px;
+  border: 1px solid var(--ps-arena);
+  background: rgb(251 247 242 / 88%);
+  -webkit-backdrop-filter: saturate(1.2) blur(10px);
+  backdrop-filter: saturate(1.2) blur(10px);
+}
+
+#header-component .header__columns {
+  padding-inline: 28px;
+}
+
+/* Enlaces del menú con fondo suave al pasar el mouse */
+#header-component .menu-list__link {
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+#header-component .menu-list__link:hover {
+  background: var(--ps-salvia-claro);
+}
+
+/* En móvil, la barra es un rectángulo redondeado */
+@media screen and (max-width: 749px) {
+  .header-section {
+    padding: 8px 12px 0;
+  }
+
+  #header-component,
+  #header-component .header__underlay-closed {
+    border-radius: 20px;
+  }
+
+  #header-component .header__columns {
+    padding-inline: 12px;
+  }
+}
+
+/* 7. Guía de tallas más compacta */
+html .ps-size-guide__inner {
+  max-width: 720px;
+  gap: 14px;
+}
+
+html .ps-size-guide__table th,
+html .ps-size-guide__table td {
+  padding: 10px 14px;
+  font-size: 0.9375rem;
+}

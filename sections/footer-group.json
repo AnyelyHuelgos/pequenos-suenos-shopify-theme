@@ -16,130 +16,104 @@
       "blocks": {
         "group_H6VpwJ": {
           "type": "group",
+          "name": "Marca y boletín",
           "settings": {
             "content_direction": "column",
             "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 6,
-            "width": "fill",
-            "custom_width": 100,
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 45,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "height": "fit"
           },
           "blocks": {
+            "text_marca": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Pequeños Sueños</h2>",
+                "width": "100%",
+                "alignment": "left",
+                "type_preset": "h4"
+              }
+            },
+            "text_desc": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Ropa, cobijas y detalles para los primeros años, hechos en Colombia.</p>",
+                "width": "100%",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "rte"
+              }
+            },
             "text_LWt8Pz": {
               "type": "text",
               "settings": {
-                "text": "<h2>Únete a la familia Pequeños Sueños</h2>",
+                "text": "<p><strong>Únete a la familia</strong> y recibe un 10% de descuento en tu primera compra.</p>",
                 "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-heading--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_f9CFLH": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Recibe un 10% de descuento en tu primera compra, consejos para los primeros meses y lanzamientos antes que nadie.</p>",
-                "width": "100%",
-                "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
+                "padding-block-start": 8
+              }
+            },
+            "email_signup_crihX7": {
+              "type": "email-signup",
+              "settings": {
+                "width": "custom",
+                "custom_width": 100,
+                "heading": "",
+                "border_style": "all",
+                "border_width": 1,
+                "border_radius": 100,
+                "input_type_preset": "paragraph",
+                "style_class": "button-unstyled",
+                "display_type": "arrow",
+                "label": "Suscribirme",
+                "integrated_button": true,
+                "button_type_preset": "paragraph"
+              }
             }
           },
-          "block_order": [
-            "text_LWt8Pz",
-            "text_f9CFLH"
-          ]
+          "block_order": ["text_marca", "text_desc", "text_LWt8Pz", "email_signup_crihX7"]
         },
-        "email_signup_crihX7": {
-          "type": "email-signup",
+        "menu_tienda": {
+          "type": "menu",
           "settings": {
-            "width": "fill",
-            "custom_width": 100,
-            "heading": "",
-            "heading_preset": "h3",
-            "border_style": "all",
-            "border_width": 1,
-            "border_radius": 100,
-            "input_type_preset": "paragraph",
-            "style_class": "button-unstyled",
-            "display_type": "arrow",
-            "label": "Suscribirme",
-            "integrated_button": true,
-            "button_type_preset": "paragraph",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "menu": "main-menu",
+            "heading": "Tienda",
+            "menu_spacing": 10,
+            "show_as_accordion": true,
+            "accordion_icon": "plus",
+            "accordion_dividers": true,
+            "heading_preset": "h6",
+            "link_preset": "paragraph"
+          }
+        },
+        "menu_ayuda": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer",
+            "heading": "Ayuda",
+            "menu_spacing": 10,
+            "show_as_accordion": true,
+            "accordion_icon": "plus",
+            "accordion_dividers": true,
+            "heading_preset": "h6",
+            "link_preset": "paragraph"
+          }
         }
       },
-      "block_order": [
-        "group_H6VpwJ",
-        "email_signup_crihX7"
-      ],
+      "block_order": ["group_H6VpwJ", "menu_tienda", "menu_ayuda"],
       "name": "t:names.footer",
       "settings": {
         "section_width": "page-width",
-        "gap": 20,
+        "gap": 40,
         "background_color": "#DCE6DF",
         "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-end": 32
       }
     },
     "footer_utilities_jLGE8U": {
@@ -194,7 +168,7 @@
         "background_color": "#DCE6DF",
         "divider_thickness": 1,
         "padding-block-start": 20,
-        "padding-block-end": 48
+        "padding-block-end": 32
       }
     }
   },

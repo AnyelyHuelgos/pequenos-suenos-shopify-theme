@@ -1,0 +1,293 @@
+{%- comment -%}
+  Sección: Guía de tallas interactiva
+  Proyecto: Pequeños Sueños, por Anyely Huelgos
+  Cada fila de la tabla es un bloque editable desde el editor de temas.
+{%- endcomment -%}
+
+<ps-size-guide
+  class="ps-size-guide"
+  style="
+    --ps-guide-bg: {{ section.settings.background_color }};
+    --ps-guide-pt: {{ section.settings.padding_top }}px;
+    --ps-guide-pb: {{ section.settings.padding_bottom }}px;
+  "
+  data-msg-prefix="Te recomendamos la talla"
+  data-msg-small="Para bebés con menos peso, escríbenos y te ayudamos a elegir."
+  data-msg-large="Tu bebé supera nuestra talla más grande. ¡Escríbenos y te asesoramos!"
+>
+  <div class="ps-size-guide__inner">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="ps-size-guide__heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.intro != blank -%}
+      <div class="ps-size-guide__intro rte">{{ section.settings.intro }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.show_calculator -%}
+      <div class="ps-size-guide__calc">
+        <label for="PsPeso-{{ section.id }}">¿Cuánto pesa tu bebé? (kg)</label>
+        <input
+          type="number"
+          id="PsPeso-{{ section.id }}"
+          min="1"
+          max="25"
+          step="0.1"
+          inputmode="decimal"
+          placeholder="Ej: 7,5"
+          data-weight-input
+        >
+        <p class="ps-size-guide__result" aria-live="polite" data-result></p>
+      </div>
+    {%- endif -%}
+
+    <div class="ps-size-guide__table-wrap">
+      <table class="ps-size-guide__table">
+        <caption class="visually-hidden">Tabla de tallas por edad, peso y altura</caption>
+        <thead>
+          <tr>
+            <th scope="col">Talla</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Peso</th>
+            <th scope="col">Altura</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr
+              {{ block.shopify_attributes }}
+              data-size-row
+              data-min="{{ block.settings.peso_min }}"
+              data-max="{{ block.settings.peso_max }}"
+              data-talla="{{ block.settings.talla | escape }}"
+            >
+              <th scope="row">{{ block.settings.talla | escape }}</th>
+              <td>{{ block.settings.edad | escape }}</td>
+              <td>{{ block.settings.peso_min }} a {{ block.settings.peso_max }} kg</td>
+              <td>{{ block.settings.altura | escape }}</td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ps-size-guide>
+
+{% stylesheet %}
+  .ps-size-guide {
+    display: block;
+    background: var(--ps-guide-bg);
+    padding-block: var(--ps-guide-pt) var(--ps-guide-pb);
+    color: var(--ps-pizarra, #3E4A4F);
+  }
+
+  .ps-size-guide__inner {
+    max-width: 880px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .ps-size-guide__heading {
+    margin: 0;
+    text-align: center;
+  }
+
+  .ps-size-guide__intro {
+    text-align: center;
+    max-width: 60ch;
+    margin-inline: auto;
+  }
+
+  .ps-size-guide__calc {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+    padding: 20px;
+    background: var(--ps-crema, #FBF7F2);
+    border-radius: var(--ps-radio, 12px);
+    box-shadow: var(--ps-sombra-suave);
+  }
+
+  .ps-size-guide__calc label {
+    font-weight: 700;
+  }
+
+  .ps-size-guide__calc input {
+    width: min(100%, 200px);
+    padding: 10px 16px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid var(--ps-arena, #E8DED2);
+    border-radius: 100px;
+    background: #fff;
+    color: inherit;
+  }
+
+  .ps-size-guide__result {
+    min-height: 1.5em;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .ps-size-guide__table-wrap {
+    overflow-x: auto;
+    border-radius: var(--ps-radio, 12px);
+    background: #fff;
+  }
+
+  .ps-size-guide__table {
+    width: 100%;
+    min-width: 480px;
+    border-collapse: collapse;
+  }
+
+  .ps-size-guide__table th,
+  .ps-size-guide__table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--ps-arena, #E8DED2);
+  }
+
+  .ps-size-guide__table thead th {
+    background: var(--ps-salvia-oscuro, #6F8F7A);
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .ps-size-guide__table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+
+  .ps-size-guide__table tbody tr.is-recommended {
+    background: var(--ps-amarillo-luna, #F4D98B);
+  }
+
+  .ps-size-guide__table tbody tr:last-child th,
+  .ps-size-guide__table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  class PsSizeGuide extends HTMLElement {
+    connectedCallback() {
+      this.input = this.querySelector('[data-weight-input]');
+      this.result = this.querySelector('[data-result]');
+      this.rows = Array.from(this.querySelectorAll('[data-size-row]'));
+      if (!this.input || this.rows.length === 0) return;
+      this.input.addEventListener('input', () => this.update());
+    }
+
+    update() {
+      const peso = parseFloat(this.input.value);
+      this.rows.forEach((row) => row.classList.remove('is-recommended'));
+
+      if (Number.isNaN(peso)) {
+        this.result.textContent = '';
+        return;
+      }
+
+      const ultima = this.rows[this.rows.length - 1];
+
+      if (peso < Number(this.rows[0].dataset.min)) {
+        this.result.textContent = this.dataset.msgSmall;
+        return;
+      }
+
+      if (peso > Number(ultima.dataset.max)) {
+        this.result.textContent = this.dataset.msgLarge;
+        return;
+      }
+
+      /* La última talla cuyo mínimo cabe en el peso: si queda en el límite, gana la más grande */
+      const recomendada = this.rows.filter((row) => peso >= Number(row.dataset.min)).pop();
+      recomendada.classList.add('is-recommended');
+      this.result.textContent = `${this.dataset.msgPrefix} ${recomendada.dataset.talla}`;
+    }
+  }
+
+  if (!customElements.get('ps-size-guide')) {
+    customElements.define('ps-size-guide', PsSizeGuide);
+  }
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Guía de tallas",
+  "tag": "section",
+  "class": "ps-size-guide-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "Guía de tallas"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Texto introductorio",
+      "default": "<p>Si tu bebé está entre dos tallas, elige la más grande: crecen rapidísimo.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_calculator",
+      "label": "Mostrar calculadora por peso",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Color de fondo",
+      "default": "#DCE6DF"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espaciado superior",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espaciado inferior",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "blocks": [
+    {
+      "type": "talla",
+      "name": "Talla",
+      "settings": [
+        { "type": "text", "id": "talla", "label": "Talla", "default": "0-3M" },
+        { "type": "text", "id": "edad", "label": "Edad", "default": "0 a 3 meses" },
+        { "type": "number", "id": "peso_min", "label": "Peso mínimo (kg)", "default": 3 },
+        { "type": "number", "id": "peso_max", "label": "Peso máximo (kg)", "default": 6 },
+        { "type": "text", "id": "altura", "label": "Altura", "default": "50 a 62 cm" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Guía de tallas",
+      "blocks": [
+        { "type": "talla", "settings": { "talla": "0-3M", "edad": "0 a 3 meses", "peso_min": 3, "peso_max": 6, "altura": "50 a 62 cm" } },
+        { "type": "talla", "settings": { "talla": "3-6M", "edad": "3 a 6 meses", "peso_min": 6, "peso_max": 8, "altura": "62 a 68 cm" } },
+        { "type": "talla", "settings": { "talla": "6-12M", "edad": "6 a 12 meses", "peso_min": 8, "peso_max": 10, "altura": "68 a 76 cm" } },
+        { "type": "talla", "settings": { "talla": "12-18M", "edad": "12 a 18 meses", "peso_min": 10, "peso_max": 12, "altura": "76 a 83 cm" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

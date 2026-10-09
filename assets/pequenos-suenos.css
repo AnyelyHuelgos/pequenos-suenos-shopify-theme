@@ -66,7 +66,7 @@ h1, h2, h3, .h1, .h2, .h3 {
 #header-component .header__underlay-closed {
   border-radius: 999px;
   border: 1px solid var(--ps-arena);
-  background: rgb(251 247 242 / 88%);
+  background: rgb(251 247 242 / 96%);
   -webkit-backdrop-filter: saturate(1.2) blur(10px);
   backdrop-filter: saturate(1.2) blur(10px);
 }
@@ -117,4 +117,17 @@ html .ps-size-guide__table td {
 /* 8. Mantener la píldora visible sobre el banner (encabezado transparente) */
 #header-component[transparent] {
   --closed-underlay-height: 100%;
+}
+
+/* 9. Encabezado transparente (inicio): separar la píldora del borde */
+#header-component[transparent] {
+  top: 12px;
+  inset-inline: var(--page-margin, 24px);
+}
+
+@media screen and (max-width: 749px) {
+  #header-component[transparent] {
+    top: 8px;
+    inset-inline: 12px;
+  }
 }

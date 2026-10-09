@@ -150,10 +150,10 @@
       "type": "section",
       "name": "Nuestra historia",
       "blocks": {
-        "image": {"type": "image", "settings": {"image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png", "image_ratio": "square", "border_radius": 16}},
-        "group": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "flex-start", "gap": 16, "width": "custom"}, "blocks": {
-          "heading": {"type": "text", "settings": {"text": "<h2>Hecho con calma, como deben ser los primeros días</h2>", "type_preset": "h3"}},
-          "text": {"type": "text", "settings": {"text": "<p>Pequeños Sueños nació de una idea simple: que lo primero que toque a un bebé sea suave, seguro y hecho con cariño. Por eso trabajamos con talleres y artesanas colombianas, elegimos telas que respiran y diseñamos en colores tranquilos que combinan entre sí.</p>", "max_width": "narrow"}},
+        "image": {"type": "image", "settings": {"image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png", "image_ratio": "portrait", "width": "custom", "custom_width": 38, "width_mobile": "fill", "border_radius": 16}},
+        "group": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 16, "width": "fill"}, "blocks": {
+          "heading": {"type": "text", "settings": {"text": "<h2>Hecho con calma, como deben ser los primeros días</h2>", "type_preset": "h2", "width": "100%", "max_width": "narrow"}},
+          "text": {"type": "text", "settings": {"text": "<p>Pequeños Sueños nació de una idea simple: que lo primero que toque a un bebé sea suave, seguro y hecho con cariño.</p><p>Por eso trabajamos con talleres y artesanas colombianas, elegimos telas que respiran y diseñamos en colores tranquilos que combinan entre sí.</p>", "type_preset": "paragraph", "width": "100%", "max_width": "narrow"}},
           "button": {"type": "button", "settings": {"label": "Conoce nuestra historia", "link": "shopify://pages/sobre-nosotros", "style_class": "button"}}
         }, "block_order": ["heading", "text", "button"]}
       },
@@ -161,12 +161,13 @@
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
         "vertical_alignment": "center",
-        "gap": 40,
+        "gap": 56,
         "section_width": "page-width",
         "background_color": "#E8DED2",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 56,
+        "padding-block-end": 56
       }
     },
     "hero_regalos01": {

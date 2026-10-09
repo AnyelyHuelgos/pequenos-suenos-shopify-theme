@@ -113,3 +113,8 @@ html .ps-size-guide__table td {
   padding: 10px 14px;
   font-size: 0.9375rem;
 }
+
+/* 8. Mantener la píldora visible sobre el banner (encabezado transparente) */
+#header-component[transparent] {
+  --closed-underlay-height: 100%;
+}

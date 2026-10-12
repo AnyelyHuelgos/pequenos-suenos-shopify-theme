@@ -1,0 +1,99 @@
+{%- doc -%}
+  Barra de progreso de envío gratis
+  Proyecto: Pequeños Sueños, por Anyely Huelgos
+
+  Se recalcula sola en cada cambio del carrito porque vive dentro de
+  cart-drawer-section, que Horizon vuelve a renderizar con la Section Rendering API.
+
+  @param {number} [umbral] - Monto mínimo para envío gratis, en pesos. Por defecto: 200000.
+{%- enddoc -%}
+
+{%- liquid
+  assign umbral_pesos = umbral | default: 200000
+
+  # Shopify guarda los montos en la unidad menor de la moneda (centavos),
+  # así que 200.000 COP se representan como 20.000.000.
+  assign umbral_centavos = umbral_pesos | times: 100
+  assign total = cart.total_price
+
+  assign faltante = umbral_centavos | minus: total
+  if faltante < 0
+    assign faltante = 0
+  endif
+
+  assign progreso = total | times: 100 | divided_by: umbral_centavos
+  if progreso > 100
+    assign progreso = 100
+  endif
+-%}
+
+<div
+  class="ps-envio-gratis{% if faltante == 0 %} ps-envio-gratis--completo{% endif %}"
+  role="status"
+  aria-live="polite"
+>
+  {%- if faltante > 0 -%}
+    <p class="ps-envio-gratis__texto">
+      Te faltan <strong>{{ faltante | money }}</strong> para tener <strong>envío gratis</strong>
+    </p>
+  {%- else -%}
+    <p class="ps-envio-gratis__texto">
+      ¡Listo! Tu pedido tiene <strong>envío gratis</strong>
+    </p>
+  {%- endif -%}
+
+  <div
+    class="ps-envio-gratis__barra"
+    role="progressbar"
+    aria-label="Progreso hacia el envío gratis"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="{{ progreso }}"
+  >
+    <span class="ps-envio-gratis__relleno" style="--ps-progreso: {{ progreso }}%;"></span>
+  </div>
+</div>
+
+{% stylesheet %}
+  .ps-envio-gratis {
+    display: grid;
+    gap: 8px;
+    margin: 0 var(--cart-drawer-padding, 20px) 16px;
+    padding: 12px 16px;
+    background: var(--ps-salvia-claro, #DCE6DF);
+    border-radius: var(--ps-radio, 12px);
+    color: var(--ps-pizarra, #3E4A4F);
+  }
+
+  .ps-envio-gratis__texto {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .ps-envio-gratis__barra {
+    height: 8px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 999px;
+  }
+
+  .ps-envio-gratis__relleno {
+    display: block;
+    width: var(--ps-progreso, 0%);
+    height: 100%;
+    background: var(--ps-salvia-oscuro, #6F8F7A);
+    border-radius: inherit;
+    transition: width 0.5s ease;
+  }
+
+  /* Cuando se alcanza el envío gratis, la barra se vuelve amarillo luna */
+  .ps-envio-gratis--completo {
+    background: #FBF1D3;
+  }
+
+  .ps-envio-gratis--completo .ps-envio-gratis__relleno {
+    background: var(--ps-amarillo-luna, #F4D98B);
+  }
+{% endstylesheet %}

@@ -110,6 +110,8 @@
                 class="cart-drawer__content"
                 aria-label="{{ 'accessibility.cart' | t }}"
               >
+                {%- # Pequeños Sueños: barra de progreso de envío gratis -%}
+                {% render 'ps-envio-gratis', umbral: 200000 %}
                 <scroll-hint class="cart-drawer__items">
                   {% render 'cart-products', context: 'drawer' %}
                 </scroll-hint>

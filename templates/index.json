@@ -11,175 +11,1166 @@
   "sections": {
     "hero_jVaWmY": {
       "type": "hero",
-      "name": "Banner principal",
       "blocks": {
-        "text_YLPk4p": {"type": "text", "settings": {"text": "<h1>Suavidad para sus primeros sueños</h1>", "type_preset": "h1", "width": "fit-content", "max_width": "narrow", "alignment": "center"}},
-        "text_sub01": {"type": "text", "settings": {"text": "<p>Ropa, cobijas y detalles para el cuarto del bebé, hechos en Colombia con algodón que cuida su piel.</p>", "type_preset": "paragraph", "width": "fit-content", "max_width": "narrow", "alignment": "center"}},
+        "text_YLPk4p": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Suavidad para sus primeros sueños</h1>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_sub01": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ropa, cobijas y detalles para el cuarto del bebé, hechos en Colombia con algodón que cuida su piel.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "botones_hero": {
           "type": "group",
-          "settings": {"content_direction": "row", "vertical_on_mobile": true, "horizontal_alignment": "center", "vertical_alignment": "center", "gap": 10, "width": "fill", "padding-block-start": 8},
-          "blocks": {
-            "button_H9gpTf": {"type": "button", "settings": {"label": "Ver la colección", "link": "shopify://collections/ropa-para-sus-primeros-meses", "style_class": "button"}},
-            "button_regalos01": {"type": "button", "settings": {"label": "Regalos para baby shower", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button-secondary"}}
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 10,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "block_order": ["button_H9gpTf", "button_regalos01"]
+          "blocks": {
+            "button_H9gpTf": {
+              "type": "button",
+              "settings": {
+                "label": "Ver la colección",
+                "link": "shopify://collections/ropa-para-sus-primeros-meses",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "button_regalos01": {
+              "type": "button",
+              "settings": {
+                "label": "Regalos para baby shower",
+                "link": "shopify://collections/regalos-para-baby-shower",
+                "open_in_new_tab": false,
+                "style_class": "button-secondary",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_H9gpTf",
+            "button_regalos01"
+          ]
         }
       },
-      "block_order": ["text_YLPk4p", "text_sub01", "botones_hero"],
+      "block_order": [
+        "text_YLPk4p",
+        "text_sub01",
+        "botones_hero"
+      ],
+      "name": "Banner principal",
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/Guarderia_bohemia_banada_por_el_sol.png",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
         "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 14,
         "section_width": "page-width",
         "section_height": "large",
+        "section_height_custom": 50,
+        "background_color": "",
         "toggle_overlay": true,
-        "overlay_color": "#FBF7F266",
+        "overlay_color": "#fbf7f266",
         "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
         "padding-block-start": 100,
         "padding-block-end": 64
       }
     },
     "beneficios01": {
       "type": "section",
-      "name": "Beneficios",
       "blocks": {
-        "b1": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 4}, "blocks": {
-          "h": {"type": "text", "settings": {"text": "<h3>Algodón que cuida su piel</h3>", "type_preset": "h6", "width": "100%", "alignment": "center"}},
-          "t": {"type": "text", "settings": {"text": "<p>Pima y orgánico, suave e hipoalergénico.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
-        }, "block_order": ["h", "t"]},
-        "b2": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 4}, "blocks": {
-          "h": {"type": "text", "settings": {"text": "<h3>Hecho en Colombia</h3>", "type_preset": "h6", "width": "100%", "alignment": "center"}},
-          "t": {"type": "text", "settings": {"text": "<p>Confeccionado en pequeños lotes por talleres y artesanas locales.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
-        }, "block_order": ["h", "t"]},
-        "b3": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 4}, "blocks": {
-          "h": {"type": "text", "settings": {"text": "<h3>Listo para regalar</h3>", "type_preset": "h6", "width": "100%", "alignment": "center"}},
-          "t": {"type": "text", "settings": {"text": "<p>Empaque de regalo y tarjeta escrita a mano.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
-        }, "block_order": ["h", "t"]},
-        "b4": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 4}, "blocks": {
-          "h": {"type": "text", "settings": {"text": "<h3>Cambios sin enredos</h3>", "type_preset": "h6", "width": "100%", "alignment": "center"}},
-          "t": {"type": "text", "settings": {"text": "<p>Si la talla no le quedó, la cambiamos dentro de los 30 días.</p>", "type_preset": "rte", "width": "100%", "alignment": "center"}}
-        }, "block_order": ["h", "t"]}
+        "b1": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 4,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "h": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Algodón que cuida su piel</h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "t": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Pima y orgánico, suave e hipoalergénico.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "h",
+            "t"
+          ]
+        },
+        "b2": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 4,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "h": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Hecho en Colombia</h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "t": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Confeccionado en pequeños lotes por talleres y artesanas locales.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "h",
+            "t"
+          ]
+        },
+        "b3": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 4,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "h": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Listo para regalar</h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "t": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Empaque de regalo y tarjeta escrita a mano.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "h",
+            "t"
+          ]
+        },
+        "b4": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 4,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "h": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Cambios sin enredos</h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "t": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Si la talla no le quedó, la cambiamos dentro de los 30 días.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "h",
+            "t"
+          ]
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4"],
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "name": "Beneficios",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "space-between",
         "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
         "gap": 20,
         "section_width": "page-width",
-        "background_color": "#DCE6DF",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#dce6df",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
         "padding-block-start": 28,
         "padding-block-end": 28
       }
     },
     "colecciones01": {
       "type": "collection-list",
-      "name": "Colecciones",
       "blocks": {
-        "header": {"type": "group", "settings": {"horizontal_alignment_flex_direction_column": "center", "gap": 8}, "blocks": {
-          "t": {"type": "text", "settings": {"text": "<h2>Encuentra lo que necesitas</h2>", "type_preset": "h3", "width": "fit-content", "alignment": "center"}}
-        }, "block_order": ["t"]},
+        "header": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 8,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "t": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Encuentra lo que necesitas</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "t"
+          ]
+        },
         "static-collection-card": {
           "type": "_collection-card",
           "static": true,
-          "settings": {"placement": "below_image", "horizontal_alignment": "center", "vertical_alignment": "center", "border": "none", "border_radius": 16},
-          "blocks": {
-            "collection-card-image": {"type": "_collection-card-image", "static": true, "settings": {"image_ratio": "square"}},
-            "collection-title": {"type": "collection-title", "settings": {"type_preset": "h6", "width": "fit-content", "alignment": "center"}}
+          "settings": {
+            "placement": "below_image",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "collection_card_gap": 8,
+            "background_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 16
           },
-          "block_order": ["collection-title"]
+          "blocks": {
+            "collection-title": {
+              "type": "collection-title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "{{ settings.color_palette.background }}",
+                "text_color": "{{ settings.color_palette.foreground }}",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "static": true,
+              "settings": {
+                "image_ratio": "square",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collection-title"
+          ]
         }
       },
-      "block_order": ["header"],
+      "block_order": [
+        "header"
+      ],
+      "name": "Colecciones",
       "settings": {
-        "collection_list": ["ropa-para-sus-primeros-meses", "cobijas-y-hora-de-dormir", "su-cuarto-sonado", "regalos-para-baby-shower"],
+        "collection_list": [
+          "ropa-para-sus-primeros-meses",
+          "cobijas-y-hora-de-dormir",
+          "su-cuarto-sonado",
+          "regalos-para-baby-shower"
+        ],
         "layout_type": "grid",
+        "carousel_on_mobile": false,
         "columns": 4,
         "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
         "columns_gap": 14,
+        "bento_gap": 8,
         "rows_gap": 14,
+        "max_collections": 4,
+        "icons_style": "arrow",
+        "icons_shape": "none",
         "section_width": "page-width",
         "gap": 20,
+        "background_color": "",
         "padding-block-start": 48,
         "padding-block-end": 24
       }
     },
     "product_list_fa6P9H": {
       "type": "product-list",
-      "name": "Los más queridos",
       "blocks": {
         "static-header": {
-          "type": "_product-list-content", "static": true,
-          "settings": {"content_direction": "row", "horizontal_alignment": "space-between", "vertical_alignment": "flex-end", "align_baseline": true, "gap": 12, "width": "fill"},
-          "blocks": {
-            "product_list_text_YFtzcL": {"type": "_product-list-text", "settings": {"text": "<h3>Los más queridos</h3><p>Las prendas que más se repiten en las pañaleras de nuestras familias.</p>", "type_preset": "h3", "width": "fit-content", "alignment": "left"}},
-            "product_list_button_MWeP9V": {"type": "_product-list-button", "settings": {"label": "Ver toda la ropa", "style_class": "button-unstyled"}}
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "block_order": ["product_list_text_YFtzcL", "product_list_button_MWeP9V"]
+          "blocks": {
+            "product_list_text_YFtzcL": {
+              "type": "_product-list-text",
+              "settings": {
+                "text": "<h3>Los más queridos</h3><p>Las prendas que más se repiten en las pañaleras de nuestras familias.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_list_button_MWeP9V": {
+              "type": "_product-list-button",
+              "settings": {
+                "label": "Ver toda la ropa",
+                "open_in_new_tab": false,
+                "style_class": "button-unstyled",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_YFtzcL",
+            "product_list_button_MWeP9V"
+          ]
         },
         "static-product-card": {
-          "type": "_product-card", "static": true,
-          "settings": {"product_card_gap": 4, "border": "none", "border_radius": 16},
-          "blocks": {
-            "product_card_gallery_677WP3": {"type": "_product-card-gallery", "settings": {"image_ratio": "square", "border": "none", "border_radius": 16}},
-            "product_title_YXxMTj": {"type": "product-title", "settings": {"type_preset": "rte", "width": "100%", "alignment": "left", "padding-block-start": 4}},
-            "price_JQzVV4": {"type": "price", "settings": {"type_preset": "h6", "width": "100%", "alignment": "left", "show_sale_price_first": true}}
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 4,
+            "background_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 16,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "block_order": ["product_card_gallery_677WP3", "product_title_YXxMTj", "price_JQzVV4"]
+          "blocks": {
+            "product_card_gallery_677WP3": {
+              "type": "_product-card-gallery",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 16,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_YXxMTj": {
+              "type": "product-title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_JQzVV4": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "text_color": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_677WP3",
+            "product_title_YXxMTj",
+            "price_JQzVV4"
+          ]
         }
       },
+      "name": "Los más queridos",
       "settings": {
         "collection": "ropa-para-sus-primeros-meses",
         "layout_type": "grid",
+        "carousel_on_mobile": false,
         "max_products": 4,
         "columns": 4,
         "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
         "columns_gap": 14,
         "rows_gap": 20,
+        "icons_style": "arrow",
+        "icons_shape": "none",
         "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
         "gap": 20,
+        "background_color": "",
         "padding-block-start": 40,
         "padding-block-end": 48
       }
     },
     "historia01": {
       "type": "section",
-      "name": "Nuestra historia",
       "blocks": {
-        "image": {"type": "image", "settings": {"image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png", "image_ratio": "portrait", "width": "custom", "custom_width": 30, "width_mobile": "fill", "border_radius": 16}},
-        "group": {"type": "group", "settings": {"content_direction": "column", "horizontal_alignment_flex_direction_column": "flex-start", "vertical_alignment_flex_direction_column": "center", "gap": 14, "width": "custom", "custom_width": 48, "width_mobile": "fill", "custom_width_mobile": 100}, "blocks": {
-          "heading": {"type": "text", "settings": {"text": "<h2>Hecho con calma, como deben ser los primeros días</h2>", "type_preset": "h3", "width": "100%"}},
-          "text": {"type": "text", "settings": {"text": "<p>Pequeños Sueños nació de una idea simple: que lo primero que toque a un bebé sea suave, seguro y hecho con cariño.</p><p>Por eso trabajamos con talleres y artesanas colombianas, elegimos telas que respiran y diseñamos en colores tranquilos que combinan entre sí.</p><p>Cada pieza se confecciona en pequeños lotes, se revisa a mano y se empaca con el mismo cuidado con el que tú la vas a usar. Así apoyamos el trabajo de mujeres artesanas y te entregamos algo que dura más allá de la primera talla.</p>", "type_preset": "rte", "width": "100%"}},
-          "firma": {"type": "text", "settings": {"text": "<p><em>Con cariño, el equipo de Pequeños Sueños</em></p>", "type_preset": "rte", "width": "100%"}},
-          "button": {"type": "button", "settings": {"label": "Conoce nuestra historia", "link": "shopify://pages/sobre-nosotros", "style_class": "button"}}
-        }, "block_order": ["heading", "text", "firma", "button"]}
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Manos_tejedoras_bajo_luz_dorada.png",
+            "link": "",
+            "image_ratio": "portrait",
+            "width": "custom",
+            "custom_width": 30,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 16,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 14,
+            "width": "custom",
+            "custom_width": 48,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Hecho con calma, como deben ser los primeros días</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Pequeños Sueños nació de una idea simple: que lo primero que toque a un bebé sea suave, seguro y hecho con cariño.</p><p>Por eso trabajamos con talleres y artesanas colombianas, elegimos telas que respiran y diseñamos en colores tranquilos que combinan entre sí.</p><p>Cada pieza se confecciona en pequeños lotes, se revisa a mano y se empaca con el mismo cuidado con el que tú la vas a usar. Así apoyamos el trabajo de mujeres artesanas y te entregamos algo que dura más allá de la primera talla.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "firma": {
+              "type": "text",
+              "settings": {
+                "text": "<p><em>Con cariño, el equipo de Pequeños Sueños</em></p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button": {
+              "type": "button",
+              "settings": {
+                "label": "Conoce nuestra historia",
+                "link": "shopify://pages/sobre-nosotros",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading",
+            "text",
+            "firma",
+            "button"
+          ]
+        }
       },
-      "block_order": ["image", "group"],
+      "block_order": [
+        "image",
+        "group"
+      ],
+      "name": "Nuestra historia",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
         "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
         "gap": 48,
         "section_width": "page-width",
-        "background_color": "#E8DED2",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#e8ded2",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
         "padding-block-start": 56,
         "padding-block-end": 56
       }
     },
     "hero_regalos01": {
       "type": "hero",
-      "name": "Banner de regalos",
       "blocks": {
         "tarjeta_regalos": {
           "type": "group",
           "name": "Tarjeta de regalos",
           "settings": {
             "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
@@ -188,90 +1179,436 @@
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
+            "custom_height": 100,
             "background_media": "none",
-            "background_color": "#F2C9B8EB",
+            "background_color": "#f2c9b8eb",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
             "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
             "border_radius": 24,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 32,
             "padding-block-end": 32,
             "padding-inline-start": 32,
             "padding-inline-end": 32
           },
           "blocks": {
-            "text_regalos_h": {"type": "text", "settings": {"text": "<h2>¿Vas a un baby shower?</h2>", "type_preset": "h3", "width": "100%", "alignment": "center"}},
-            "text_regalos_p": {"type": "text", "settings": {"text": "<p>Regalos que se usan de verdad, listos para entregar con tarjeta escrita a mano.</p>", "type_preset": "paragraph", "width": "100%", "alignment": "center"}},
-            "button_regalos02": {"type": "button", "settings": {"label": "Ver regalos", "link": "shopify://collections/regalos-para-baby-shower", "style_class": "button"}}
+            "text_regalos_h": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>¿Vas a un baby shower?</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_regalos_p": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Regalos que se usan de verdad, listos para entregar con tarjeta escrita a mano.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_regalos02": {
+              "type": "button",
+              "settings": {
+                "label": "Ver regalos",
+                "link": "shopify://collections/regalos-para-baby-shower",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
           },
-          "block_order": ["text_regalos_h", "text_regalos_p", "button_regalos02"]
+          "block_order": [
+            "text_regalos_h",
+            "text_regalos_p",
+            "button_regalos02"
+          ]
         }
       },
-      "block_order": ["tarjeta_regalos"],
+      "block_order": [
+        "tarjeta_regalos"
+      ],
+      "name": "Banner de regalos",
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/Regalos_tiernos_en_tonos_naturales.png",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
         "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 0,
         "section_width": "page-width",
         "section_height": "small",
+        "section_height_custom": 50,
+        "background_color": "",
         "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
         "padding-block-start": 40,
         "padding-block-end": 40
       }
     },
     "product_list_cobijas01": {
       "type": "product-list",
-      "name": "Para su hora de dormir",
       "blocks": {
         "static-header": {
-          "type": "_product-list-content", "static": true,
-          "settings": {"content_direction": "row", "horizontal_alignment": "space-between", "vertical_alignment": "flex-end", "align_baseline": true, "gap": 12, "width": "fill"},
-          "blocks": {
-            "product_list_text_cob01": {"type": "_product-list-text", "settings": {"text": "<h3>Para su hora de dormir</h3>", "type_preset": "h3", "width": "fit-content", "alignment": "left"}},
-            "product_list_button_cob01": {"type": "_product-list-button", "settings": {"label": "Ver cobijas", "style_class": "button-unstyled"}}
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "block_order": ["product_list_text_cob01", "product_list_button_cob01"]
+          "blocks": {
+            "product_list_text_cob01": {
+              "type": "_product-list-text",
+              "settings": {
+                "text": "<h3>Para su hora de dormir</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_list_button_cob01": {
+              "type": "_product-list-button",
+              "settings": {
+                "label": "Ver cobijas",
+                "open_in_new_tab": false,
+                "style_class": "button-unstyled",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_cob01",
+            "product_list_button_cob01"
+          ]
         },
         "static-product-card": {
-          "type": "_product-card", "static": true,
-          "settings": {"product_card_gap": 4, "border": "none", "border_radius": 16},
-          "blocks": {
-            "product_card_gallery_cob01": {"type": "_product-card-gallery", "settings": {"image_ratio": "square", "border": "none", "border_radius": 16}},
-            "product_title_cob01": {"type": "product-title", "settings": {"type_preset": "rte", "width": "100%", "alignment": "left", "padding-block-start": 4}},
-            "price_cob01": {"type": "price", "settings": {"type_preset": "h6", "width": "100%", "alignment": "left", "show_sale_price_first": true}}
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 4,
+            "background_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 16,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "block_order": ["product_card_gallery_cob01", "product_title_cob01", "price_cob01"]
+          "blocks": {
+            "product_card_gallery_cob01": {
+              "type": "_product-card-gallery",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 16,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_cob01": {
+              "type": "product-title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_cob01": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "text_color": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_cob01",
+            "product_title_cob01",
+            "price_cob01"
+          ]
         }
       },
+      "name": "Para su hora de dormir",
       "settings": {
         "collection": "cobijas-y-hora-de-dormir",
         "layout_type": "grid",
+        "carousel_on_mobile": false,
         "max_products": 3,
         "columns": 3,
         "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
         "columns_gap": 14,
         "rows_gap": 20,
+        "icons_style": "arrow",
+        "icons_shape": "none",
         "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
         "gap": 20,
+        "background_color": "",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
     },
     "promesa01": {
       "type": "section",
-      "name": "Nuestra promesa",
       "blocks": {
-        "heading": {"type": "text", "settings": {"text": "<h2>Cuidamos lo que más quieres</h2>", "type_preset": "h3", "width": "100%", "max_width": "narrow", "alignment": "center"}},
-        "text": {"type": "text", "settings": {"text": "<p>Cada prenda pasa por nuestras manos antes de llegar a las tuyas. Si algo no te convence, escríbenos: te respondemos como una amiga, no como un robot.</p>", "type_preset": "paragraph", "width": "100%", "max_width": "narrow", "alignment": "center"}},
-        "button": {"type": "button", "settings": {"label": "Escríbenos", "link": "shopify://pages/contacto", "style_class": "button-secondary"}}
+        "heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Cuidamos lo que más quieres</h2>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cada prenda pasa por nuestras manos antes de llegar a las tuyas. Si algo no te convence, escríbenos: te respondemos como una amiga, no como un robot.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "label": "Escríbenos",
+            "link": "shopify://pages/contacto",
+            "open_in_new_tab": false,
+            "style_class": "button-secondary",
+            "custom_button_background": "{{ settings.color_palette.foreground }}",
+            "custom_button_text": "{{ settings.color_palette.background }}",
+            "custom_button_border": "{{ settings.color_palette.background }}",
+            "link_text_color": "",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
       },
-      "block_order": ["heading", "text", "button"],
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "name": "Nuestra promesa",
       "settings": {
         "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
         "padding-block-start": 56,
         "padding-block-end": 56
       }

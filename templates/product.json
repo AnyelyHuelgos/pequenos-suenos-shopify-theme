@@ -168,7 +168,7 @@
               "settings": {
                 "thickness": 1,
                 "corner_radius": "square",
-                "divider_color": "#E8DED2",
+                "divider_color": "#e8ded2",
                 "width_percent": 100,
                 "padding-block-start": 0,
                 "padding-block-end": 0
@@ -243,7 +243,7 @@
                   "settings": {
                     "style_class": "button",
                     "custom_button_background": "{{ settings.color_palette.color1 }}",
-                    "custom_button_text": "#FFFFFF",
+                    "custom_button_text": "#ffffff",
                     "custom_button_border": "{{ settings.color_palette.color1 }}"
                   },
                   "blocks": {}
@@ -360,7 +360,7 @@
         "heading": "Guía de tallas",
         "intro": "<p>Si tu bebé está entre dos tallas, elige la más grande: crecen rapidísimo.</p>",
         "show_calculator": true,
-        "background_color": "#DCE6DF",
+        "background_color": "#dce6df",
         "padding_top": 40,
         "padding_bottom": 40
       }
@@ -460,7 +460,7 @@
                 "show_sale_price_first": true,
                 "show_installments": false,
                 "show_tax_info": false,
-                "type_preset": "h6",
+                "type_preset": "paragraph",
                 "width": "100%",
                 "alignment": "left",
                 "font": "var(--font-body--family)",

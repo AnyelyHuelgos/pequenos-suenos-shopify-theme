@@ -131,3 +131,16 @@ html .ps-size-guide__table td {
     inset-inline: 12px;
   }
 }
+
+/* 10. Precios: evitar que se recorte el símbolo y los números */
+product-price.text-block,
+product-price.text-block [ref='priceContainer'],
+product-price.text-block .price,
+product-price.text-block bdi {
+  line-height: 1.6 !important;
+  overflow: visible !important;
+}
+
+product-price.text-block {
+  padding-block-start: 3px;
+}
